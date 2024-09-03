@@ -9,7 +9,7 @@ def convert_bin_to_npy(input_file_path):
     file_name_with_extension = os.path.basename(input_file_path)
 
 
-    output_file_path = f'point_cloud_data_npy/{os.path.splitext(file_name_with_extension)[0]}.npy'
+    output_file_path = f'sensor_data/Visionerf/point_clouds/{os.path.splitext(file_name_with_extension)[0]}.npy'
 
     np.save(output_file_path, points)
 
